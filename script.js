@@ -12,14 +12,12 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }))
 
 var button = document.querySelector('.button')
-// var inputValue = document.querySelector('.inputValue')
 var cityName = document.querySelector('.cityName');
 var desc = document.querySelector('.desc');
 var temp = document.querySelector('.temp');
 
 button.addEventListener('click', function()
 {
-	// fetch('https://pro.openweathermap.org/data/2.5/forecast/hourly?zip=7000,bg&appid=5f7edfcf5d7bb904e231e538fb098ad4')
 	fetch('https://api.openweathermap.org/data/2.5/weather?q=Ruse&units=metric&appid=5f7edfcf5d7bb904e231e538fb098ad4')
 	.then(response => response.json())
 	.then(data =>
@@ -34,6 +32,4 @@ button.addEventListener('click', function()
 
 			console.log(data);
 		})
-
-	// .catch(err => alert("err!"))
 })
