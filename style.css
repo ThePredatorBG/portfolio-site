@@ -20,6 +20,20 @@ header
 	box-shadow: 5px 10px 8px #888888;
 }
 
+.inputField {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	border-radius:6px;
+	border:3px solid #dcdcdc;
+	display:inline-block;
+	color:#666666;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:18px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+	margin:10px;
+}
 .button {
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
@@ -57,7 +71,7 @@ a.nav-branding, a.nav-link
 	text-decoration: none;
 }
 
-img
+.bigImg
 {
 	width:450px;
 	height:450px;
@@ -66,6 +80,11 @@ img
 }
 
 .imgBorder {
+	width:450px;
+	height:450px;
+	object-fit: contain;
+	margin:10px;
+
   padding: 15px 15px 0;
   background-color: white;
   box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
@@ -141,20 +160,22 @@ figure:hover+span {
 	text-align: center;
 }
 
-h1,h2 {
+h1,h2,h3 {
 	display: flex;
 	flex-direction: row;
+	margin-top:10px;
+	margin-bottom:10px;
 }
-h1:before,h1:after,h2:before,h2:after{
+h1:before,h1:after,h2:before,h2:after,h3:before,h3:after{
 	content: "";
 	flex: 1 1;
 	border-bottom: 1px solid;
 	margin: auto;
 }
-h1:before,h2:before {
+h1:before,h2:before,h3:before {
 	margin-right: 10px
 }
-h1:after,h2:after {
+h1:after,h2:after,h3:after {
 	margin-left: 10px
 }
 
@@ -243,6 +264,46 @@ li
 	background-color: white;
 }
 
+.icons
+{
+	display:inline-block;
+	background-color: #fafafa;
+	height:200px;
+	width: 190px;
+	margin:2	0px;
+	border: 3px solid #dcdcdc;
+	border-radius: 15px;
+}
+
+.imgClass
+{
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+	height:100px;
+	width:100px;
+}
+
+.weather
+{
+	margin:5px;
+	text-align:center;
+	font-weight: bold;
+}
+
+.tempValues
+{
+	float:left;
+	text-align:center;
+	display: inline-block;
+	border-radius: 5px;
+	height:25px;
+	width:85px;
+	margin:0;
+	margin-bottom:5px;
+	margin-left: 5px;
+}
+
 @media(max-width:1280px)
 {
 	.content
@@ -251,10 +312,15 @@ li
 		font-size: 18px;
 	}
 
-	img
+	.imgBorder
 	{
 		width: auto;
 	}
+}
+
+.row1
+{
+	margin: 0px;
 }
 
 @media(max-width:768px)
