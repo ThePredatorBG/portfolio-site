@@ -11,6 +11,9 @@
 body
 {
 	 background-image: url(img/bg.png);
+	 min-height:100vh;
+   display:flex;
+   flex-direction:column;
 }
 
 header
@@ -241,6 +244,15 @@ li
 	margin: 5px auto;
 	transition: all 0.3s ease-in-out;
 	background-color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #262626;
+  color: white;
+  font-size: 22px;
+  margin-top:auto;
 }
 
 @media(max-width:1280px)

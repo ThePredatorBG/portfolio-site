@@ -15,10 +15,10 @@
 				<a href="#" class="nav-link">Home</a>
 			</li>
 			<li class="nav-item">
-				<a href="about.html" class="nav-link">About me</a>
+				<a href="about.php" class="nav-link">About me</a>
 			</li>
 			<li class="nav-item">
-				<a href="forecast.html" class="nav-link">Forecast</a>
+				<a href="forecast.php" class="nav-link">Forecast</a>
 			</li>
 		</ul>
 		<div class="hamburger">
@@ -68,6 +68,9 @@
 
 </div>
 
+<footer>
+  <p>Current year: <?php echo date("Y"); ?> </p>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
