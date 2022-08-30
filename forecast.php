@@ -9,13 +9,13 @@
 
 <header>
 	<nav class="navbar">
-		<a href="index.html" class="nav-branding">Andrew Harris</a>
+		<a href="index.php" class="nav-branding">Andrew Harris</a>
 		<ul class="nav-menu">
 			<li class="nav-item">
-				<a href="index.html" class="nav-link">Home</a>
+				<a href="index.php" class="nav-link">Home</a>
 			</li>
 			<li class="nav-item">
-				<a href="about.html" class="nav-link">About me</a>
+				<a href="about.php" class="nav-link">About me</a>
 			</li>
 			<li class="nav-item">
 				<a href="#" class="nav-link">Forecast</a>
@@ -38,6 +38,9 @@
 	</div>
 </div>
 
+<footer>
+  <p>Current year: <?php echo date("Y"); ?> </p>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
