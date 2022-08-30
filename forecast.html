@@ -31,10 +31,50 @@
 
 <div class="content">
 	<div class="row1">
+		<h2><strong>Weather forecast</strong></h2>
+		<input class="inputField" type="text" placeholder="Enter city name">
 		<input class="button" type="submit" value="Get forecast">
-		<p class="cityName">City:</p>
-		<p class="desc">Description:</p>
-		<p class="temp">Temperature (Celsius):</p>
+		<div class="hideShow" style="visibility:hidden">
+			<h3><strong>Current forecast</strong></h3>
+			<div class="icons">
+				<p class="weather" id="day0"></p>
+				<div class="image"><img src="#" class="imgClass" id="img0" alt=""></div>
+				<p class="tempValues" id="day0Min">Loading...</p>
+				<p class="tempValues" id="day0Max">Loading...</p>
+			</div>
+
+			<h3><strong>5-day forecast</strong></h3>
+			<div class="icons">
+				<p class="weather" id="day1"></p>
+				<div class="image"><img src="#" class="imgClass" id="img1" alt=""></div>
+				<p class="tempValues" id="day1Min">Loading...</p>
+				<p class="tempValues" id="day1Max">Loading...</p>
+			</div>
+			<div class="icons">
+				<p class="weather" id="day2"></p>
+				<div class="image"><img src="#" class="imgClass" id="img2" alt=""></div>
+				<p class="tempValues" id="day2Min">Loading...</p>
+				<p class="tempValues" id="day2Max">Loading...</p>
+			</div>
+			<div class="icons">
+				<p class="weather" id="day3"></p>
+				<div class="image"><img src="#" class="imgClass" id="img3" alt=""></div>
+				<p class="tempValues" id="day3Min">Loading...</p>
+				<p class="tempValues" id="day3Max">Loading...</p>
+			</div>
+			<div class="icons">
+				<p class="weather" id="day4"></p>
+				<div class="image"><img src="#" class="imgClass" id="img4" alt=""></div>
+				<p class="tempValues" id="day4Min">Loading...</p>
+				<p class="tempValues" id="day4Max">Loading...</p>
+			</div>
+			<div class="icons">
+				<p class="weather" id="day5"></p>
+				<div class="image"><img src="#" class="imgClass" id="img5" alt=""></div>
+				<p class="tempValues" id="day5Min">Loading...</p>
+				<p class="tempValues" id="day5Max">Loading...</p>
+			</div>
+		</div>
 	</div>
 </div>
 
