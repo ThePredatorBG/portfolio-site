@@ -25,8 +25,6 @@ button.addEventListener('click', function()
 			document.querySelector("#day0Min").innerHTML = "Min: " + data.main.temp_min + "°C";
 			document.querySelector("#day0Max").innerHTML = "Max: " + data.main.temp_max + "°C";
 			document.querySelector("#img0").src = "http://openweathermap.org/img/wn/" + data.weather[0].icon+"@2x.png";
-
-			console.log(data);
 		})
 
 	 fetch('https://api.openweathermap.org/data/2.5/forecast?q='+inputField.value+'&units=metric&appid=5f7edfcf5d7bb904e231e538fb098ad4')
@@ -36,16 +34,9 @@ button.addEventListener('click', function()
 				for(i=0;i<5;i++)
 				{
 					document.querySelector("#day" + (i+1) + "Min").innerHTML = "Min: " + data.list[i].main.temp_min + "°C";
-				}
-				for(i=0;i<5;i++)
-				{
 					document.querySelector("#day" + (i+1) + "Max").innerHTML = "Max: " + data.list[i].main.temp_max + "°C";
-				}
-				for(i=0;i<5;i++)
-				{
 					document.querySelector("#img" + (i+1)).src = "http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon+"@2x.png";
 				}
-		 		console.log(data);
 	 	})
 
 		const d = new Date();
