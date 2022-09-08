@@ -22,8 +22,8 @@ button.addEventListener('click', function()
 	.then(response => response.json())
 	.then(data =>
 		{
-			document.querySelector("#day0Min").innerHTML = "Min: " + data.main.temp_min + "°C";
-			document.querySelector("#day0Max").innerHTML = "Max: " + data.main.temp_max + "°C";
+			document.querySelector("#day0Min").innerHTML = "Min: " + data.main.temp_min + "&deg;C";
+			document.querySelector("#day0Max").innerHTML = "Max: " + data.main.temp_max + "&deg;C";
 			document.querySelector("#img0").src = "http://openweathermap.org/img/wn/" + data.weather[0].icon+"@2x.png";
 		})
 
@@ -33,8 +33,8 @@ button.addEventListener('click', function()
 	 	{
 				for(i=0;i<5;i++)
 				{
-					document.querySelector("#day" + (i+1) + "Min").innerHTML = "Min: " + data.list[i].main.temp_min + "°C";
-					document.querySelector("#day" + (i+1) + "Max").innerHTML = "Max: " + data.list[i].main.temp_max + "°C";
+					document.querySelector("#day" + (i+1) + "Min").innerHTML = "Min: " + data.list[i].main.temp_min + "&deg;C";
+					document.querySelector("#day" + (i+1) + "Max").innerHTML = "Max: " + data.list[i].main.temp_max + "&deg;C";
 					document.querySelector("#img" + (i+1)).src = "http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon+"@2x.png";
 				}
 	 	})
